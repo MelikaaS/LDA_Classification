@@ -33,4 +33,19 @@ The `load_wine` dataset is relatively small, allowing the LDA model to achieve p
 ![LDA classification on **`load_wine`** dataset](https://github.com/MelikaaS/LDA_Classification/blob/main/Screenshot%20from%202024-08-26%2011-58-36.jpg)
 
 
+----
+The `load-digits` dataset contains 1797 datapoints, 64 predictors and 10 target classes. Below table shows the result of implementing LDA on `load_digits` dataset:
+
+| Step                                              | Description                                               | Accuracy Score          |
+|---------------------------------------------------|-----------------------------------------------------------|-------------------------|
+| LDA model fitted on `load_digits` dataset         | Initial model without any preprocessing                    | 0.9638                  |
+| Data standardized with `StandardScaler()`         | Data was standardized before fitting the LDA model         | 0.9638                  |
+| Pipeline: Standardization and feature selection   | Standardization and PCA applied before LDA through pipeline| 0.9638                  |
+
+---
+## Conclusion
+The `**load_digits**` dataset in scikit-learn is a well-known dataset used for classification tasks. 
+The similarity in accuracy scores across the different methods (direct LDA, LDA after standardization, and LDA in a pipeline) suggests that the features are already quite effective for classification and that the transformations are not significantly altering the feature space in a way that impacts classification performance.
+
+
 
