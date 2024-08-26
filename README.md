@@ -30,5 +30,7 @@ This repository utilizes two small embedded scikit-learn datasets: **`load_wine`
 ## Results
 The `load_wine` dataset is relatively small, allowing the LDA model to achieve perfect classification, with an accuracy score of **1.0**. This indicates that the data was perfectly separated into three groups, as demonstrated in the scatter plot of LDA Component 0 against LDA Component 1.
 
+![LDA classification on **`load_wine`** dataset](https://github.com/MelikaaS/LDA_Classification/blob/main/Screenshot%20from%202024-08-26%2011-58-36.jpg)
+
 
 
